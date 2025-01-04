@@ -27,11 +27,9 @@ data "aws_vpc" "selected_vpc" {
 }
 #get public subnets for cluster
 data "aws_subnets" "public" {
-  filter {
-    name   = "vpc-id"
-    values = [data.aws_vpc.selected_vpc.id]
-  }
+  ids = ["subnet-0a731a03b4d286577"]
 }
+
 #cluster provision
 resource "aws_eks_cluster" "example" {
   name     = "EKS_CLOUD"
