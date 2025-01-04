@@ -89,7 +89,7 @@ resource "aws_eks_node_group" "example" {
   node_role_arn   = aws_iam_role.example1.arn
   subnet_ids      = [
     "subnet-0a731a03b4d286577", # Subnet yang sudah ada
-    "subnet-<id-subnet-baru>"   # Subnet baru
+    "subnet-070655a70148eeba3"   # Subnet baru
   ]
 
   scaling_config {
