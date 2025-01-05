@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: chatbot
-        image: sevenajay/chatbot:latest
+        image: rainover922/chatbot:latest
         ports:
         - containerPort: 3000
 
