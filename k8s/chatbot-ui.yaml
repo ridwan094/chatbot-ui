@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: chatbot
-        image: rainover922/chatbot:latest
+        image: rainover922/chatbot:legacy
         ports:
         - containerPort: 3000
 
